@@ -36,3 +36,10 @@
 .no-scrollbar::-webkit-scrollbar-thumb {
   background-color: rgb(194, 194, 194);
 }
+
+.icon-sidebar{ 
+  stroke-width: 1px; 
+}
+.icon2-sidebar{ 
+  stroke-width: -1px; 
+}

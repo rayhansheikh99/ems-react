@@ -8,6 +8,7 @@ import { GoAlert } from "react-icons/go";
 import { GrDocumentText } from "react-icons/gr";
 import { BsChatLeft } from "react-icons/bs";
 import { PiDotsThreeOutlineFill } from "react-icons/pi";
+import { FiPieChart } from "react-icons/fi";
 import user from "../../../assets/user/icon.jpg";
 
 const SideNav = () => {
@@ -19,44 +20,44 @@ const SideNav = () => {
             </div>
 
             <div className="ml-[30px] pt-28 space-y-[18px] pb-20 max-h-screen overflow-y-auto no-scrollbar">
-                <div className="bg-blue-500 flex items-center gap-x-2 text-white w-max px-[30px] py-2.5 rounded-lg lg:cursor-pointer duration-500">
-                    <LuHome />
+                <div className="bg-blue-500 flex items-center gap-x-2 text-white font-bold w-max px-[30px] py-2.5 rounded-lg lg:cursor-pointer duration-500">
+                    <LuHome className="icon-sidebar" />
                     <h2>Dashboard</h2>
                 </div>
                 <div className="flex items-center gap-x-2 w-max px-[30px] py-2.5 hover:bg-blue-500 hover:text-white rounded-lg lg:cursor-pointer duration-500">
-                    <CiCalendar />
+                    <CiCalendar className="icon2-sidebar" />
                     <h2>Attendance</h2>
                 </div>
                 <div className="flex items-center gap-x-2 w-max px-[30px] py-2.5 hover:bg-blue-500 hover:text-white rounded-lg lg:cursor-pointer duration-500">
-                    <GoClock />
+                    <GoClock className="icon2-sidebar" />
                     <h2>Leave</h2>
                 </div>
                 <div className="flex items-center gap-x-2 w-max px-[30px] py-2.5 hover:bg-blue-500 hover:text-white rounded-lg lg:cursor-pointer duration-500">
-                    <LuDollarSign />
+                    <LuDollarSign className="icon-sidebar"/>
                     <h2>Salary</h2>
                 </div>
                 <div className="flex items-center gap-x-2 w-max px-[30px] py-2.5 hover:bg-blue-500 hover:text-white rounded-lg lg:cursor-pointer duration-500">
-                    <TbDatabase />
+                    <TbDatabase className="icon-sidebar" />
                     <h2>Loan Application</h2>
                 </div>
                 <div className="flex items-center gap-x-2 w-max px-[30px] py-2.5 hover:bg-blue-500 hover:text-white rounded-lg lg:cursor-pointer duration-500">
-                    <LuHome />
+                    <FiPieChart className="icon-sidebar" />
                     <h2>Report</h2>
                 </div>
                 <div className="flex items-center gap-x-2 w-max px-[30px] py-2.5 hover:bg-blue-500 hover:text-white rounded-lg lg:cursor-pointer duration-500">
-                    <LuBookOpen />
+                    <LuBookOpen className="icon-sidebar" />
                     <h2>Task</h2>
                 </div>
                 <div className="flex items-center gap-x-2 w-max px-[30px] py-2.5 hover:bg-blue-500 hover:text-white rounded-lg lg:cursor-pointer duration-500">
-                    <GoAlert />
+                    <GoAlert className="icon2-sidebar" />
                     <h2>Penalty</h2>
                 </div>
                 <div className="flex items-center gap-x-2 w-max px-[30px] py-2.5 hover:bg-blue-500 hover:text-white rounded-lg lg:cursor-pointer duration-500">
-                    <GrDocumentText />
+                    <GrDocumentText className="icon2-sidebar" />
                     <h2>Notice Board</h2>
                 </div>
                 <div className="flex items-center gap-x-2 w-max px-[30px] py-2.5 hover:bg-blue-500 hover:text-white rounded-lg lg:cursor-pointer duration-500">
-                    <BsChatLeft />
+                    <BsChatLeft className="icon2-sidebar" />
                     <h2>Chat</h2>
                 </div>
             </div>
