@@ -13,7 +13,7 @@ import user from "../../../assets/user/icon.jpg";
 
 const SideNav = () => {
     return (
-        <div className="bg-white w-[255px] max-h-screen relative">
+        <div className="bg-white w-[255px] min-h-screen fixed">
             <div className="bg-white absolute top-0 h-16 border-b-2 flex flex-col justify-center w-full">
                 <h2 className="ml-[60px] text-lg text-blue-500 font-bold">Employee</h2>
                 <p className="ml-[60px] text-[12px] text-[#878CA8]">Management System</p>

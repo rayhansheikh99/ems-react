@@ -43,3 +43,7 @@
 .icon2-sidebar{ 
   stroke-width: -1px; 
 }
+canvas{ 
+  width: 100% !important; 
+  height: 250px !important; 
+}
