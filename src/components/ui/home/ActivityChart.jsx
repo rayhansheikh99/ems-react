@@ -1,52 +1,7 @@
 // import { Bar } from 'react-chartjs-2';
-// import {
-//     Chart,
-//     CategoryScale,
-//     LinearScale,
-//     BarElement,
-//     Title,
-//     Tooltip,
-//     Legend,
-// } from 'chart.js/auto';
 import moment from 'moment';
 import { FiCalendar } from 'react-icons/fi';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
-// Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
-
-// const options = {
-//     responsive: true,
-//     plugins: {
-//         legend: {
-//             display: false,
-//             position: 'top',
-//         },
-//         title: {
-//             display: false,
-//             text: 'Chart.js Bar Chart',
-//         },
-//     },
-// };
-
-// const labels = ['09 am', '10 am', '11 am', '12 pm', '01 pm', '02 pm', '03 pm', '04 pm', "05 pm"];
-
-// const data = {
-//     labels,
-//     datasets: [
-//         {
-//             label: 'Working',
-//             data: [35, 30, 48, 25, 70, 50, 30, 20, 55],
-//             backgroundColor: '#3D55CC',
-//             borderRadius: "3",
-//         },
-//         {
-//             label: 'Rest',
-//             data: [60, 35, 38, 35, 40, 40, 50, 10, 25],
-//             backgroundColor: '#BDC4E2',
-//             borderRadius: "3",
-//         },
-//     ],
-// };
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const data = [
     {
@@ -121,13 +76,13 @@ const ActivityChart = () => {
             <div className="w-full bg-white p-5 h-80">
                 <ResponsiveContainer width="100%" height="100%">
                     <BarChart width={730} height={250} data={data}>
-                        <CartesianGrid strokeDasharray="3 3" />
+                        <CartesianGrid stroke="#F5F6FA" />
                         <XAxis dataKey="name" />
                         <YAxis />
                         <Tooltip />
-                        <Legend />
-                        <Bar dataKey="pv" fill="#3D55CC" />
-                        <Bar dataKey="uv" fill="#BDC4E2" />
+                        {/* <Legend /> */}
+                        <Bar dataKey="pv" fill="#3D55CC"  radius={[5, 5, 5, 5]}/>
+                        <Bar dataKey="uv" fill="#BDC4E2"  radius={[5, 5, 5, 5]}/>
                     </BarChart>
                 </ResponsiveContainer>
             </div>
